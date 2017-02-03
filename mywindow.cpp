@@ -113,15 +113,7 @@ void MyWindow::on_pushButton_2_clicked()
 
 void MyWindow::on_pushButton_3_clicked()
 {
-    QFile some_file("C:/Пользователи/NextO/Рабочий стол/tmp_data.txt");
-    if(!some_file.open(QIODevice::WriteOnly))
-    {
-        qDebug() << "Ошибка открытия для записи";
-    }
-    else qDebug() << "Файл открыт для записи";
-    QByteArray aa("junk just");
-    some_file.write(aa);
-    some_file.close();
+
 }
 
 void MyWindow::on_pushButton_4_clicked()
@@ -135,9 +127,11 @@ void MyWindow::on_pushButton_4_clicked()
     QByteArray aa("junk just");
     some_file.write(aa);
     some_file.close();
+    qDebug() << "Все действия завершены!";
+    qDebug() <<" safadfdsfasdfasdfsad ";
 }
 
 void MyWindow::on_spinBox_4_valueChanged(int arg1)
 {
-
+    qDebug() <<" safadfdsfasdfasdfsad ";
 }
