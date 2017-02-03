@@ -126,7 +126,9 @@ void MyWindow::on_pushButton_4_clicked()
     else qDebug() << "Файл открыт для записи";
     QByteArray aa("junk just");
     some_file.write(aa);
-    //some_file.close();
+    some_file.close();
+    qDebug() << "Все действия завершены!";
+    qDebug() <<"  ";
 }
 
 void MyWindow::on_spinBox_4_valueChanged(int arg1)
